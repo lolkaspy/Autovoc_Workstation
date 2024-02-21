@@ -1,6 +1,6 @@
 # Autovoc_Workstation
 ## Используемые технологии и библиотеки (Stack + Libraries)
-C# WPF, Entity Framework, Ookii Dialogs, iTextSharp, EasyDox, Microsoft.Office.Interop.Word
+C# WPF, MS SQL + Entity Framework, Ookii Dialogs, iTextSharp, EasyDox, Microsoft.Office.Interop.Word
 
 ## Сценарий работы
 Сценарий описан в документе, прилагаемом в репозитории "Сценарий работы в системе.pdf"
