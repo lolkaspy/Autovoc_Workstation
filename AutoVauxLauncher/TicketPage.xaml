@@ -1,0 +1,109 @@
+﻿<UserControl x:Class="AutoVauxLauncher.TicketPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoVauxLauncher"
+      mc:Ignorable="d" 
+      d:DesignHeight="560" d:DesignWidth="1280" Background="#FFDEE4F0" Unloaded="UserControl_Unloaded" Loaded="UserControl_Loaded"
+>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="3">
+            <Grid Style="{DynamicResource sndpanel}">
+                <Rectangle Width="auto" Height="2" Fill="#CAD0C8" Margin="0,-78,0,0"></Rectangle>
+                <Rectangle Width="auto" Height="2" Fill="#CAD0C8" Margin="0,78,0,0"></Rectangle>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right">
+            <Label FontSize="24" FontFamily="Flavors" VerticalContentAlignment="Center">Выберите дату</Label>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <xctk:DateTimePicker x:Name="date" Background="#D9D9D9" TimePickerVisibility="Hidden" FormatString="yyyy-MM-dd" Format="Custom"  Width="300" Height="50"></xctk:DateTimePicker>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right">
+            <Label FontSize="24" FontFamily="Flavors" VerticalContentAlignment="Center">Выберите номер автобуса</Label>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <ComboBox Height="50" Width="300" x:Name="num" Style="{DynamicResource ComboBoxTest2}" SelectionChanged="BusSelect"></ComboBox>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right">
+            <Label FontSize="24" FontFamily="Flavors" VerticalContentAlignment="Center">Выберите маршрут</Label>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <ComboBox Height="50" Width="300" Style="{DynamicResource ComboBoxTest2}" x:Name="route" SelectionChanged="RouteSelect"></ComboBox>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right">
+            <Label FontSize="24" FontFamily="Flavors" VerticalContentAlignment="Center">Выберите время отправления</Label>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1">
+            <ComboBox Style="{DynamicResource ComboBoxTest2}" Width="300" Height="50" x:Name="time"></ComboBox>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Margin="125,0,0,0">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <CheckBox VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource MyCheckBoxTemplate}" Width="16" Height="16" Checked="BackChecked" Unchecked="BackUnchecked" x:Name="back" >
+                    <CheckBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="2" ScaleY="2"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </CheckBox.RenderTransform>
+                </CheckBox>
+                <TextBlock FontSize="24" FontFamily="Flavors" Margin="25,0,0,0">Туда-обратно</TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Margin="125,0,0,0">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <CheckBox RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" Template="{DynamicResource MyCheckBoxTemplate}" Width="16" Height="16" x:Name="tcard" Checked="tcardChecked" Unchecked="tcardUnchecked">
+                    <CheckBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="2" ScaleY="2"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </CheckBox.RenderTransform>
+                </CheckBox>
+                <TextBlock FontSize="24" FontFamily="Flavors" Margin="25,0,0,0">Проездной</TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="2">
+            <TextBlock TextWrapping="WrapWithOverflow" FontSize="18" HorizontalAlignment="Center" TextAlignment="Center" Width="318" Panel.ZIndex="1" Height="82" Margin="0,15,0,0" VerticalAlignment="Top" >Выберите тарифный план для проездного билета</TextBlock>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2">
+            <ComboBox Style="{DynamicResource ComboBoxTest2}"  Width="300" Height="50" x:Name="rate" IsEnabled="False" SelectionChanged="rate_SelectionChanged"></ComboBox>
+        </Grid>
+        <Grid Grid.Row="5" Grid.ColumnSpan="3" Background="#A5AAB2">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Grid Background="#D9D9D9" Height="150" Width="450">
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Right" Margin="0,0,50,0"  FontSize="24">Итого:</TextBlock>
+                        <TextBlock HorizontalAlignment="Center" Margin="0,50,20,0" FontSize="40" x:Name="Price">0,00</TextBlock>
+                    </StackPanel>
+                    <TextBlock HorizontalAlignment="Left" Margin="316,112,0,0" TextWrapping="Wrap" x:Name="sum" VerticalAlignment="Top"/>
+                </Grid>
+                <Button Margin="150,0,0,0" Click="PrintCheck" Style="{DynamicResource green_button}">
+                    <StackPanel Orientation="Horizontal" Width="320" Height="50">
+                        <Image Source="Icons/icon_talon.png"></Image>
+                        <Label Margin="20,0,0,0">Печать чека</Label>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

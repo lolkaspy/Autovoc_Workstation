@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="AutoVauxLauncher.RoutesTable"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoVauxLauncher"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="480" d:DesignWidth="1280" Background="#FFDEE4F0" 
+>
+    <UserControl.Resources>
+        <Style TargetType="{x:Type DataGridCell}">
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="#A5AAB2"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontFamily" Value="Flavors"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+            <Setter Property="Background" Value="#D9D9D9"/>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#CAD0C8"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="FontFamily" Value="Flavors"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#D9D9D9"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="#A5AAB2"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800">
+            </ColumnDefinition>
+            <ColumnDefinition Width="480"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0">
+            <DataGrid AutoGenerateColumns="False"  Width="NaN" x:Name="routes" GridLinesVisibility="None" Background="#485966" VerticalContentAlignment="Center"
+   ColumnWidth="*" FontSize="17" HorizontalContentAlignment="Stretch" IsReadOnly="True" CanUserAddRows="True" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" SelectionMode="Single"  CanUserResizeRows="False" HeadersVisibility="Column" SelectionChanged="RowSelected">
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type ToolTip}">
+                        <Setter Property="FontSize" Value="20"></Setter>
+                        <Setter Property="FontFamily" Value="Flavors"></Setter>
+                        <Setter Property="Background" Value="AliceBlue"></Setter>
+                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"></Setter>
+                    </Style>
+                    <Style TargetType="{x:Type ScrollBar}">
+                        <Setter Property="Background" Value="#FFDEE4F0"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                    </Style>
+                    <ContextMenu x:Key="DataGridColumnContextMenu">
+                        <MenuItem Header="Удалить"/>
+                        <MenuItem Header="Изменить"/>
+                    </ContextMenu>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="ContextMenu" Value="{DynamicResource DataGridColumnContextMenu}" />
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Код маршрута" Binding="{Binding ROUTE_ID}" Width="0.5*">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="ToolTip" Value="{Binding ROUTE_ID}" />
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Маршрут" Binding="{Binding ROUTE}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="ToolTip" Value="{Binding ROUTE}" />
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Стоимость поездки" Binding="{Binding TRAVEL_COSTS}" Width="0.6*">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="ToolTip" Value="{Binding TRAVEL_COSTS}" />
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Номер автобуса" Binding="{Binding BUS_ID_FK}" Width="0.5*">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="ToolTip" Value="{Binding BUS_ID_FK}" />
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0">Маршрут</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" x:Name="routetxt" MaxLength="500"></TextBox>
+                <Label Grid.Column="0" Grid.Row="1">Стоимость поездки</Label>
+                <TextBox x:Name="costtxt" Grid.Column="1" Grid.Row="1" MaxLength="9">0,00</TextBox>
+                <Label Grid.Column="0" Grid.Row="2">Номер автобуса</Label>
+                <ComboBox Grid.Column="1" Grid.Row="2" Style="{DynamicResource ComboBoxTest2}" x:Name="busid"></ComboBox>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Style="{DynamicResource green_button}" Grid.Row="0" x:Name="add" Click="AddRow">Добавить</Button>
+                <Button Style="{DynamicResource green_button}" Grid.Row="1" x:Name="del" Click="DelRow">Удалить</Button>
+                <Button Style="{DynamicResource green_button}" Grid.Row="2" x:Name="upd" Click="UpdRow">Изменить</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

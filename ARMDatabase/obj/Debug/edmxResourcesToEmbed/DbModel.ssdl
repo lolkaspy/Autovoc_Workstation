@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище DBAutoVaux" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bron">
+    <Key>
+      <PropertyRef Name="ID_BRON" />
+    </Key>
+    <Property Name="ID_BRON" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DATE" Type="datetime" Nullable="false" />
+    <Property Name="BUS" Type="int" Nullable="false" />
+    <Property Name="DEPART_TIME" Type="datetime" Nullable="false" />
+    <Property Name="ONTOUR" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="COUNT" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bus_fleet">
+    <Key>
+      <PropertyRef Name="BUS_ID" />
+    </Key>
+    <Property Name="BUS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="REG_ID" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="ORG_ID_FK" Type="int" Nullable="false" />
+    <Property Name="BUS_TYPE_ID_FK" Type="int" Nullable="false" />
+    <Property Name="SCHEME_ID_FK" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bus_types">
+    <Key>
+      <PropertyRef Name="BUS_TYPE_ID" />
+    </Key>
+    <Property Name="BUS_TYPE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BUS_TYPENAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Carriers">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ORG_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ORG_ADDRESS" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="ORG_PHONE" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="ORG_EMAIL" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Profiles">
+    <Key>
+      <PropertyRef Name="PROFILE_ID" />
+    </Key>
+    <Property Name="PROFILE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FNAME" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="LNAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MNAME" Type="nvarchar" MaxLength="60" />
+    <Property Name="BIRTH_DATE" Type="datetime" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="PHONE" Type="nvarchar" MaxLength="12" />
+    <Property Name="HASH_PASSWORD" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="SALT" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="PROFILE_STATE" Type="bit" Nullable="false" />
+    <Property Name="ROLE_ID_FK" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="ROLE_ID" />
+    </Key>
+    <Property Name="ROLE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ROLE" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Routes">
+    <Key>
+      <PropertyRef Name="ROUTE_ID" />
+    </Key>
+    <Property Name="ROUTE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ROUTE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="TRAVEL_COSTS" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="BUS_ID_FK" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Schemas">
+    <Key>
+      <PropertyRef Name="SCHEME_ID" />
+    </Key>
+    <Property Name="SCHEME_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SEAT_COUNT" Type="int" Nullable="false" />
+    <Property Name="SPEED" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="COUNTRY_ABBR" Type="nvarchar" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Timetable_records">
+    <Key>
+      <PropertyRef Name="TIMETABLE_RECORD_ID" />
+    </Key>
+    <Property Name="TIMETABLE_RECORD_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DEPARTURE_TIME" Type="datetime" Nullable="false" />
+    <Property Name="ARRIVAL_TIME" Type="datetime" Nullable="false" />
+    <Property Name="ROUTE_ID_FK" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimetableList">
+    <Key>
+      <PropertyRef Name="TIMETABLE_ID" />
+    </Key>
+    <Property Name="TIMETABLE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TIMETABLE_RECORD_ID_FK" Type="int" Nullable="false" />
+    <Property Name="DATE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Timetables">
+    <Key>
+      <PropertyRef Name="DATE" />
+    </Key>
+    <Property Name="DATE" Type="datetime" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Bus_fleet_Bus_types">
+    <End Role="Bus_types" Type="Self.Bus_types" Multiplicity="1" />
+    <End Role="Bus_fleet" Type="Self.Bus_fleet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bus_types">
+        <PropertyRef Name="BUS_TYPE_ID" />
+      </Principal>
+      <Dependent Role="Bus_fleet">
+        <PropertyRef Name="BUS_TYPE_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bus_fleet_Carriers">
+    <End Role="Carriers" Type="Self.Carriers" Multiplicity="1" />
+    <End Role="Bus_fleet" Type="Self.Bus_fleet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carriers">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="Bus_fleet">
+        <PropertyRef Name="ORG_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bus_fleet_Schemas">
+    <End Role="Schemas" Type="Self.Schemas" Multiplicity="1" />
+    <End Role="Bus_fleet" Type="Self.Bus_fleet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schemas">
+        <PropertyRef Name="SCHEME_ID" />
+      </Principal>
+      <Dependent Role="Bus_fleet">
+        <PropertyRef Name="SCHEME_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Profiles_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Profiles" Type="Self.Profiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="Profiles">
+        <PropertyRef Name="ROLE_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Routes_Bus_fleet">
+    <End Role="Bus_fleet" Type="Self.Bus_fleet" Multiplicity="1" />
+    <End Role="Routes" Type="Self.Routes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bus_fleet">
+        <PropertyRef Name="BUS_ID" />
+      </Principal>
+      <Dependent Role="Routes">
+        <PropertyRef Name="BUS_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Timetable_records_Routes">
+    <End Role="Routes" Type="Self.Routes" Multiplicity="1" />
+    <End Role="Timetable_records" Type="Self.Timetable_records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Routes">
+        <PropertyRef Name="ROUTE_ID" />
+      </Principal>
+      <Dependent Role="Timetable_records">
+        <PropertyRef Name="ROUTE_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TimetableList_Timetable_records">
+    <End Role="Timetable_records" Type="Self.Timetable_records" Multiplicity="1" />
+    <End Role="TimetableList" Type="Self.TimetableList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Timetable_records">
+        <PropertyRef Name="TIMETABLE_RECORD_ID" />
+      </Principal>
+      <Dependent Role="TimetableList">
+        <PropertyRef Name="TIMETABLE_RECORD_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TimetableList_Timetables">
+    <End Role="Timetables" Type="Self.Timetables" Multiplicity="1" />
+    <End Role="TimetableList" Type="Self.TimetableList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Timetables">
+        <PropertyRef Name="DATE" />
+      </Principal>
+      <Dependent Role="TimetableList">
+        <PropertyRef Name="DATE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище DBAutoVauxContainer">
+    <EntitySet Name="Bron" EntityType="Self.Bron" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bus_fleet" EntityType="Self.Bus_fleet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bus_types" EntityType="Self.Bus_types" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Carriers" EntityType="Self.Carriers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Profiles" EntityType="Self.Profiles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Routes" EntityType="Self.Routes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Schemas" EntityType="Self.Schemas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Timetable_records" EntityType="Self.Timetable_records" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimetableList" EntityType="Self.TimetableList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Timetables" EntityType="Self.Timetables" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Bus_fleet_Bus_types" Association="Self.FK_Bus_fleet_Bus_types">
+      <End Role="Bus_types" EntitySet="Bus_types" />
+      <End Role="Bus_fleet" EntitySet="Bus_fleet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bus_fleet_Carriers" Association="Self.FK_Bus_fleet_Carriers">
+      <End Role="Carriers" EntitySet="Carriers" />
+      <End Role="Bus_fleet" EntitySet="Bus_fleet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bus_fleet_Schemas" Association="Self.FK_Bus_fleet_Schemas">
+      <End Role="Schemas" EntitySet="Schemas" />
+      <End Role="Bus_fleet" EntitySet="Bus_fleet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Profiles_Roles" Association="Self.FK_Profiles_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Profiles" EntitySet="Profiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Routes_Bus_fleet" Association="Self.FK_Routes_Bus_fleet">
+      <End Role="Bus_fleet" EntitySet="Bus_fleet" />
+      <End Role="Routes" EntitySet="Routes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Timetable_records_Routes" Association="Self.FK_Timetable_records_Routes">
+      <End Role="Routes" EntitySet="Routes" />
+      <End Role="Timetable_records" EntitySet="Timetable_records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TimetableList_Timetable_records" Association="Self.FK_TimetableList_Timetable_records">
+      <End Role="Timetable_records" EntitySet="Timetable_records" />
+      <End Role="TimetableList" EntitySet="TimetableList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TimetableList_Timetables" Association="Self.FK_TimetableList_Timetables">
+      <End Role="Timetables" EntitySet="Timetables" />
+      <End Role="TimetableList" EntitySet="TimetableList" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

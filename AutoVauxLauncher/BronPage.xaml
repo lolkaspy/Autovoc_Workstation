@@ -1,0 +1,212 @@
+﻿<UserControl
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:local="clr-namespace:AutoVauxLauncher"
+      xmlns:ARMDatabase="clr-namespace:ARMDatabase;assembly=ARMDatabase" x:Class="AutoVauxLauncher.BronPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="560" d:DesignWidth="1280" Background="#FFDEE4F0" Unloaded="UnloadedBron" Loaded="LoadedBron"
+>
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="bronViewSource" d:DesignSource="{d:DesignInstance {x:Type ARMDatabase:Bron}}"/>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="320"/>
+            <ColumnDefinition Width="240"/>
+            <ColumnDefinition Width="320"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="160"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="4">
+            <Grid>
+                <Grid>
+                    <Grid Style="{DynamicResource sndpanel}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Grid.Column="0">
+                            <Button Style="{DynamicResource graybutton}" Click="Button_Click_2">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="150"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0" Grid.Column="0" >
+                                        <Image HorizontalAlignment="Left" Source="Icons/icon_record.png"/>
+                                    </Grid>
+                                    <Grid Grid.Row="0" Grid.Column="1">
+                                        <TextBlock  Style="{DynamicResource buttext}" VerticalAlignment="Center"><Run Text="Создать бронь"/></TextBlock>
+                                    </Grid>
+                                </Grid>
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="0" Grid.Column="1"/>
+                        <Grid Grid.Row="0" Grid.Column="2"/>
+                        <Grid Grid.Row="1" Grid.Column="0">
+                            <Button Style="{DynamicResource graybutton}" Click="Button_Click_1">
+                                <TextBlock  Style="{DynamicResource buttext}" VerticalAlignment="Center" HorizontalAlignment="Center"><Run Text="Открыть список брони"/></TextBlock>
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="0" Grid.Column="4"/>
+                        <Grid Grid.Row="1" Grid.Column="4"/>
+                        <Grid Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2"/>
+                        <Grid Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="2"/>
+                        <Grid Grid.Row="0" Grid.ColumnSpan="7">
+                            <Rectangle Width="auto" Height="2" Fill="#CAD0C8" Margin="0,-38,0,0"/>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.ColumnSpan="7">
+                            <Rectangle Width="auto" Height="2" Fill="#CAD0C8" Margin="0,38,0,0"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Label FontSize="24" FontFamily="Flavors" Margin="10" HorizontalAlignment="Right">Выберите дату</Label>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <xctk:DateTimePicker x:Name="date" HorizontalContentAlignment="Center"  Width="300" Height="50"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="0" DataContext="{StaticResource bronViewSource}" >
+            <TextBlock FontSize="24" FontFamily="Flavors" Margin="20" HorizontalAlignment="Right"><Run Text="В"/><Run Language="ru-ru" Text="ыберите"/><Run Text=" номер автобуса"/></TextBlock>
+        </Grid>
+        <DataGrid x:Name="bronDataGrid" EnableRowVirtualization="True" ItemsSource="{Binding}" RowDetailsVisibilityMode="VisibleWhenSelected"  Visibility="Hidden" AutoGenerateColumns="False" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="7"  Width="NaN" GridLinesVisibility="None" Background="#485966" VerticalContentAlignment="Center"
+   ColumnWidth="*" FontSize="17" HorizontalContentAlignment="Stretch" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" SelectionMode="Single"  CanUserResizeRows="False" HeadersVisibility="Column" Panel.ZIndex="1">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type ToolTip}">
+                    <Setter Property="FontSize" Value="20"></Setter>
+                    <Setter Property="FontFamily" Value="Flavors"></Setter>
+                    <Setter Property="Background" Value="AliceBlue"></Setter>
+                    <Setter Property="TextBlock.TextWrapping" Value="Wrap"></Setter>
+                </Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="TextWrapping" Value="Wrap"/>
+                </Style>
+                <Style TargetType="{x:Type ScrollBar}">
+                    <Setter Property="Background" Value="#FFDEE4F0"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                <ContextMenu x:Key="DataGridColumnContextMenu">
+                    <MenuItem Header="Удалить" Click="Delete_Click"/>
+                    <MenuItem Header="Изменить" Click="Change_Click"/>
+                </ContextMenu>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="ContextMenu" Value="{DynamicResource DataGridColumnContextMenu}" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="bUSColumn" Binding="{Binding BUS}" Header="Номер автобуса" Width="0.3*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="ToolTip" Value="{Binding BUS}" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn x:Name="cOUNTColumn" Binding="{Binding COUNT}" Header="Количество мест" Width="0.3*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="ToolTip" Value="{Binding COUNT}" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn x:Name="Дата" Header="Дата" Binding="{Binding DATE, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, StringFormat=d}" Width="0.2*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="ToolTip" Value="{Binding DATE, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, StringFormat=d}" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn x:Name="dEPART_TIMEColumn" Header="Время отправления" Binding="{Binding DEPART_TIME, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, ConverterCulture=ru-RU, StringFormat='HH:mm'}" Width="0.35*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="ToolTip" Value="{Binding DEPART_TIME, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, ConverterCulture=ru-RU, StringFormat='HH:mm'}" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn x:Name="oNTOURColumn" Binding="{Binding ONTOUR}" Header="Путь" Width="1.3*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="ToolTip" Value="{Binding ONTOUR}" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <ComboBox Height="50" Width="300" Style="{DynamicResource ComboBoxTest2}" x:Name="num" SelectionChanged="num_SelectionChanged"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <ContentControl x:Name="tpicker" Width="300"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="0">
+            <TextBlock FontSize="24" FontFamily="Flavors" Margin="20" HorizontalAlignment="Right"><Run Text="Выберите время отправления"/></TextBlock>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1"/>
+        <Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4"  Background="#A5AAB2">
+            <Button Height="50" Width="300" Style="{DynamicResource green_button}" Click="Button_Click" Content="Забронировать" x:Name="ad"/>
+            <Button Height="50" Width="300" Style="{DynamicResource green_button}" Click="Change_Record" Content="Изменить" x:Name="ch" Visibility="Hidden"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2"/>
+        <Grid Grid.Row="1" Grid.Column="3"/>
+        <Grid Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right">
+            <Label VerticalAlignment="Center" FontSize="24" FontFamily="Flavors" Margin="20" Content="Указать путь"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1">
+            <TextBox Width="300" MaxLength="500" x:Name="ontour"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="2">
+            <TextBox MaxLength="3" Width="80" x:Name="seat"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="3">
+            <Label VerticalAlignment="Center" FontSize="24" FontFamily="Flavors" Content="Количество мест"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <CheckBox VerticalContentAlignment="Center" Height="16" Width="16" Template="{DynamicResource MyCheckBoxTemplate}" Margin="50,0,0,0" x:Name="full" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
+                <CheckBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="2" ScaleY="2"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </CheckBox.RenderTransform>
+            </CheckBox>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="3">
+            <Label VerticalAlignment="Center" FontSize="24" FontFamily="Flavors" Content="Заказать автобус целиком"/>
+        </Grid>
+    </Grid>
+</UserControl>

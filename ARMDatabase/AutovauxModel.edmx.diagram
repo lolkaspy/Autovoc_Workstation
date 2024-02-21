@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f2e9783853b948b6bee4ef6a26f48a81" Name="Diagram1">
+        <EntityTypeShape EntityType="AutovauxModel.Bron" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Bus_fleet" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Bus_types" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Carriers" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Profiles" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Rate_plans" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Roles" Width="1.5" PointX="2.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Routes" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Schemas" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.TimetableList" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutovauxModel.Timetables" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="AutovauxModel.FK_Bus_fleet_Bus_types" ManuallyRouted="false" />
+        <AssociationConnector Association="AutovauxModel.FK_Bus_fleet_Carriers" ManuallyRouted="false" />
+        <AssociationConnector Association="AutovauxModel.FK_Bus_fleet_Schemas" ManuallyRouted="false" />
+        <AssociationConnector Association="AutovauxModel.FK_Routes_Bus_fleet" ManuallyRouted="false" />
+        <AssociationConnector Association="AutovauxModel.FK_Profiles_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="AutovauxModel.FK_TimetableList_Routes" />
+        <AssociationConnector Association="AutovauxModel.FK_TimetableList_Timetables" />
+        <EntityTypeShape EntityType="AutovauxModel.TimetableTemp" Width="1.5" PointX="5.5" PointY="9.5" />
+        <AssociationConnector Association="AutovauxModel.FK_TimetableTemp_Routes" />
+        <EntityTypeShape EntityType="AutovauxModel.GenialView" Width="1.5" PointX="10.375" PointY="3.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

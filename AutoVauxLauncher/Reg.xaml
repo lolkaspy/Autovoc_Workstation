@@ -1,0 +1,174 @@
+﻿<Window x:Class="AutoVauxLauncher.Reg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MessageBoxWindow" Height="800" Width="800" 
+        WindowStartupLocation="CenterScreen" WindowStyle="None" Background="White" 
+        ResizeMode="NoResize" ShowInTaskbar="False"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="10"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto" MouseLeftButtonDown="OnMouseLeftButtonDown" 
+        >
+    <Window.Resources>
+        <Style TargetType="{x:Type ToolTip}">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontFamily" Value="Flavors"></Setter>
+            <Setter Property="Background" Value="AliceBlue"></Setter>
+            <Setter Property="TextBlock.TextWrapping" Value="Wrap"></Setter>
+        </Style>
+    </Window.Resources>
+    <Border BorderThickness="2" BorderBrush="#A5AAB2">
+        <Grid Background="#FFDEE4F0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="726"/>
+                <ColumnDefinition Width="70"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="750"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.ColumnSpan="2">
+                <Rectangle Fill="#A5AAB2"></Rectangle>
+                <Rectangle Width="auto" Height="2" Fill="#CAD0C8" Margin="0,48,0,0"></Rectangle>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="0" Width="auto">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"  Grid.Column="0">
+                    <TextBlock x:Name="txtTitle" Margin="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" >Регистрация</TextBlock>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1" Width="auto">
+                <Button x:Name="btnClose" Click="btnClose_Click" Width="40" Height="40" Background="#A5AAB2" HorizontalAlignment="Right" Style="{DynamicResource butclose}">
+                    <Image Source="/Icons/Vector.png"></Image>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="77"/>
+                    <RowDefinition Height="77"/>
+                    <RowDefinition Height="77"/>
+                    <RowDefinition Height="77"/>
+                    <RowDefinition Height="77"/>
+                    <RowDefinition Height="77"/>
+                    <RowDefinition Height="77"/>
+                    <RowDefinition Height="77"/>
+                    <RowDefinition Height="134"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock FontSize="22" x:Name="ecounter">0</TextBlock>
+                        <TextBlock FontSize="22">/</TextBlock>
+                        <TextBlock FontSize="22">30</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock FontSize="22" x:Name="fcounter">0</TextBlock>
+                        <TextBlock FontSize="22">/</TextBlock>
+                        <TextBlock FontSize="22">30</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock FontSize="22" x:Name="lcounter">0</TextBlock>
+                        <TextBlock FontSize="22">/</TextBlock>
+                        <TextBlock FontSize="22">50</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock FontSize="22" x:Name="mcounter">0</TextBlock>
+                        <TextBlock FontSize="22">/</TextBlock>
+                        <TextBlock FontSize="22">40</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="6">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock FontSize="22" x:Name="pwdcounter">0</TextBlock>
+                        <TextBlock FontSize="22">/</TextBlock>
+                        <TextBlock FontSize="22">20</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="7">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock FontSize="22" x:Name="pwd2counter">0</TextBlock>
+                        <TextBlock FontSize="22">/</TextBlock>
+                        <TextBlock FontSize="22">20</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0" Margin="0,0,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="77"/>
+                        <RowDefinition Height="77"/>
+                        <RowDefinition Height="77"/>
+                        <RowDefinition Height="77"/>
+                        <RowDefinition Height="77"/>
+                        <RowDefinition Height="77"/>
+                        <RowDefinition Height="77"/>
+                        <RowDefinition Height="77"/>
+                        <RowDefinition Height="134"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"/>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32">E-mail*</TextBlock>
+                    <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
+                        <TextBox x:Name="txtLogin" Height="50" Width="350" MaxLength="30" ToolTip="e-mail формата ___@__.__" TextChanged="EmailChanged" >
+                        </TextBox>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+                        <TextBox x:Name="fname" Height="50" Width="350" MaxLength="30" TextChanged="fname_TextChanged"></TextBox>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+                        <TextBox x:Name="lname" Height="50" Width="350" MaxLength="50" TextChanged="lname_TextChanged"></TextBox>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+                        <TextBox x:Name="mname" Height="50" Width="350" MaxLength="40" TextChanged="mname_TextChanged"></TextBox>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
+                        <xctk:DateTimePicker x:Name="birth" HorizontalContentAlignment="Center"  Width="350" Height="50" BorderThickness="0"></xctk:DateTimePicker>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2">
+                        <xctk:MaskedTextBox Mask="############" x:Name="phone" Grid.Row="1" Grid.Column="3"  MaxLength="12" ToolTip="Можно ввести номер формата +89999999999, либо 99999999999" IncludePromptInValue="False" Width="350" Height="50"></xctk:MaskedTextBox>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="49*"/>
+                            <ColumnDefinition Width="201*"/>
+                        </Grid.ColumnDefinitions>
+                        <PasswordBox x:Name="pwd" Height="50" Width="350" MaxLength="20" ToolTip="Длина не менее 8 символов. Как минимум одна цифра, один символ должны присутствовать. Максимум 20 символов." Grid.ColumnSpan="2" Margin="50,14,50,13" PasswordChanged="pwd_PasswordChanged"></PasswordBox>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2">
+                        <PasswordBox x:Name="pwd2" Height="50" Width="350" MaxLength="20" PasswordChanged="pwd2_PasswordChanged" ToolTip="Пароли должны совпадать"></PasswordBox>
+                    </Grid>
+                    <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"  FontSize="32">Имя*</TextBlock>
+                    <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"  FontSize="32">Фамилия*</TextBlock>
+                    <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"  FontSize="32">Отчество</TextBlock>
+                    <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"  FontSize="32">Дата рождения</TextBlock>
+                    <TextBlock Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"  FontSize="32">Телефон</TextBlock>
+                    <TextBlock Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"  FontSize="32">Пароль*</TextBlock>
+                    <TextBlock Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"  FontSize="32">Повторите пароль*</TextBlock>
+                    <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,0,0">
+                    </Grid>
+                    <Grid Grid.Row="8" Grid.ColumnSpan="3" Margin="0,0,0,0" >
+                        <StackPanel>
+                            <Label>* - обязательные поля для ввода</Label>
+                            <Button x:Name="btnYes" Click="btnYes_Click" Grid.Column="1" Width="500" Height="75" Content="Зарегистрироваться" FontSize="36" ToolTip="Зарегистрироваться" Style="{DynamicResource green_button}">
+                                <Button.Effect>
+                                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="4" BlurRadius="4" Opacity="0.25" />
+                                </Button.Effect>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="AutoVauxLauncher.TimePicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AutoVauxLauncher"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="36"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontFamily" Value="Flavors"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="BorderBrush" Value="#485966"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="36"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontFamily" Value="Flavors"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="#D9D9D9">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.RowSpan="2">
+            <TextBox x:Name="Hour" Text="0" MaxLength="2" Background="#FFCAD0C8" TextChanged="HourChanged" PreviewTextInput="HourInput"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Button Content="+" Click="Hour_Added" Margin="0,0,0,0" x:Name="addhour" PreviewMouseLeftButtonDown="HourMultiadding" PreviewMouseLeftButtonUp="HourMultiaddingStop"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="3">
+            <Button Content="+" Click="Minute_Added" Margin="0,0,0,0" x:Name="addmin" PreviewMouseLeftButtonDown="MinuteMultiadding" PreviewMouseLeftButtonUp="MinuteMultiaddingStop"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" >
+            <Button Content="-" Click="Hour_Removed" Margin="0,0,0,0" x:Name="delhour" PreviewMouseLeftButtonUp="HourMultiremovingStop" PreviewMouseLeftButtonDown="HourMultiremoving"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="3" >
+            <Button Content="-" Click="Minute_Removed" Margin="0,0,0,0" x:Name="delmin" PreviewMouseLeftButtonUp="MinuteMultiremovingStop" PreviewMouseLeftButtonDown="MinuteMultiremoving"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="2" Grid.RowSpan="2">
+            <TextBox x:Name="Minute" Text="00" MaxLength="2" Background="#FFCAD0C8" TextChanged="MinuteChanged" PreviewTextInput="MinuteInput"></TextBox>
+        </Grid>
+    </Grid>
+</UserControl>

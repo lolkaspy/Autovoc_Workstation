@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище AutovauxModelContainer" CdmEntityContainer="AutovauxContext">
+    <EntitySetMapping Name="Bron">
+      <EntityTypeMapping TypeName="AutovauxModel.Bron">
+        <MappingFragment StoreEntitySet="Bron">
+          <ScalarProperty Name="ID_BRON" ColumnName="ID_BRON" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="BUS" ColumnName="BUS" />
+          <ScalarProperty Name="DEPART_TIME" ColumnName="DEPART_TIME" />
+          <ScalarProperty Name="ONTOUR" ColumnName="ONTOUR" />
+          <ScalarProperty Name="COUNT" ColumnName="COUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bus_fleet">
+      <EntityTypeMapping TypeName="AutovauxModel.Bus_fleet">
+        <MappingFragment StoreEntitySet="Bus_fleet">
+          <ScalarProperty Name="BUS_ID" ColumnName="BUS_ID" />
+          <ScalarProperty Name="REG_ID" ColumnName="REG_ID" />
+          <ScalarProperty Name="ORG_ID_FK" ColumnName="ORG_ID_FK" />
+          <ScalarProperty Name="BUS_TYPE_ID_FK" ColumnName="BUS_TYPE_ID_FK" />
+          <ScalarProperty Name="SCHEME_ID_FK" ColumnName="SCHEME_ID_FK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bus_types">
+      <EntityTypeMapping TypeName="AutovauxModel.Bus_types">
+        <MappingFragment StoreEntitySet="Bus_types">
+          <ScalarProperty Name="BUS_TYPE_ID" ColumnName="BUS_TYPE_ID" />
+          <ScalarProperty Name="BUS_TYPENAME" ColumnName="BUS_TYPENAME" />
+          <ScalarProperty Name="BUS_HASCARD" ColumnName="BUS_HASCARD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carriers">
+      <EntityTypeMapping TypeName="AutovauxModel.Carriers">
+        <MappingFragment StoreEntitySet="Carriers">
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+          <ScalarProperty Name="ORG_ADDRESS" ColumnName="ORG_ADDRESS" />
+          <ScalarProperty Name="ORG_PHONE" ColumnName="ORG_PHONE" />
+          <ScalarProperty Name="ORG_EMAIL" ColumnName="ORG_EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profiles">
+      <EntityTypeMapping TypeName="AutovauxModel.Profiles">
+        <MappingFragment StoreEntitySet="Profiles">
+          <ScalarProperty Name="PROFILE_ID" ColumnName="PROFILE_ID" />
+          <ScalarProperty Name="FNAME" ColumnName="FNAME" />
+          <ScalarProperty Name="LNAME" ColumnName="LNAME" />
+          <ScalarProperty Name="MNAME" ColumnName="MNAME" />
+          <ScalarProperty Name="BIRTH_DATE" ColumnName="BIRTH_DATE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="HASH_PASSWORD" ColumnName="HASH_PASSWORD" />
+          <ScalarProperty Name="SALT" ColumnName="SALT" />
+          <ScalarProperty Name="PROFILE_STATE" ColumnName="PROFILE_STATE" />
+          <ScalarProperty Name="ROLE_ID_FK" ColumnName="ROLE_ID_FK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rate_plans">
+      <EntityTypeMapping TypeName="AutovauxModel.Rate_plans">
+        <MappingFragment StoreEntitySet="Rate_plans">
+          <ScalarProperty Name="PLAN_ID" ColumnName="PLAN_ID" />
+          <ScalarProperty Name="RATE_COSTS" ColumnName="RATE_COSTS" />
+          <ScalarProperty Name="PLAN_NAME" ColumnName="PLAN_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="AutovauxModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="ROLE" ColumnName="ROLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Routes">
+      <EntityTypeMapping TypeName="AutovauxModel.Routes">
+        <MappingFragment StoreEntitySet="Routes">
+          <ScalarProperty Name="ROUTE_ID" ColumnName="ROUTE_ID" />
+          <ScalarProperty Name="ROUTE" ColumnName="ROUTE" />
+          <ScalarProperty Name="TRAVEL_COSTS" ColumnName="TRAVEL_COSTS" />
+          <ScalarProperty Name="BUS_ID_FK" ColumnName="BUS_ID_FK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schemas">
+      <EntityTypeMapping TypeName="AutovauxModel.Schemas">
+        <MappingFragment StoreEntitySet="Schemas">
+          <ScalarProperty Name="SCHEME_ID" ColumnName="SCHEME_ID" />
+          <ScalarProperty Name="SEAT_COUNT" ColumnName="SEAT_COUNT" />
+          <ScalarProperty Name="SPEED" ColumnName="SPEED" />
+          <ScalarProperty Name="COUNTRY_ABBR" ColumnName="COUNTRY_ABBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimetableList">
+      <EntityTypeMapping TypeName="AutovauxModel.TimetableList">
+        <MappingFragment StoreEntitySet="TimetableList">
+          <ScalarProperty Name="TIMETABLE_ID" ColumnName="TIMETABLE_ID" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="DEPARTURE_TIME" ColumnName="DEPARTURE_TIME" />
+          <ScalarProperty Name="ARRIVAL_TIME" ColumnName="ARRIVAL_TIME" />
+          <ScalarProperty Name="ROUTE_ID_FK" ColumnName="ROUTE_ID_FK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Timetables">
+      <EntityTypeMapping TypeName="AutovauxModel.Timetables">
+        <MappingFragment StoreEntitySet="Timetables">
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimetableTemp">
+      <EntityTypeMapping TypeName="AutovauxModel.TimetableTemp">
+        <MappingFragment StoreEntitySet="TimetableTemp">
+          <ScalarProperty Name="ROUTE_ID_FK" ColumnName="ROUTE_ID_FK" />
+          <ScalarProperty Name="ARRIVAL_TIME" ColumnName="ARRIVAL_TIME" />
+          <ScalarProperty Name="DEPARTURE_TIME" ColumnName="DEPARTURE_TIME" />
+          <ScalarProperty Name="TEMP_ID" ColumnName="TEMP_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenialView">
+      <EntityTypeMapping TypeName="AutovauxModel.GenialView">
+        <MappingFragment StoreEntitySet="GenialView">
+          <ScalarProperty Name="TEMP_ID" ColumnName="TEMP_ID" />
+          <ScalarProperty Name="BUS_ID" ColumnName="BUS_ID" />
+          <ScalarProperty Name="ROUTE" ColumnName="ROUTE" />
+          <ScalarProperty Name="ARRIVAL_TIME" ColumnName="ARRIVAL_TIME" />
+          <ScalarProperty Name="DEPARTURE_TIME" ColumnName="DEPARTURE_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

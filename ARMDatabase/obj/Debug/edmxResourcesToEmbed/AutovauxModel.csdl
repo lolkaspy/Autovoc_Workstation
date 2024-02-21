@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AutovauxModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bron">
+    <Key>
+      <PropertyRef Name="ID_BRON" />
+    </Key>
+    <Property Name="ID_BRON" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BUS" Type="Int32" Nullable="false" />
+    <Property Name="DEPART_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ONTOUR" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="COUNT" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bus_fleet">
+    <Key>
+      <PropertyRef Name="BUS_ID" />
+    </Key>
+    <Property Name="BUS_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="REG_ID" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ORG_ID_FK" Type="Int32" Nullable="false" />
+    <Property Name="BUS_TYPE_ID_FK" Type="Int32" Nullable="false" />
+    <Property Name="SCHEME_ID_FK" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Bus_types" Relationship="Self.FK_Bus_fleet_Bus_types" FromRole="Bus_fleet" ToRole="Bus_types" />
+    <NavigationProperty Name="Carriers" Relationship="Self.FK_Bus_fleet_Carriers" FromRole="Bus_fleet" ToRole="Carriers" />
+    <NavigationProperty Name="Schemas" Relationship="Self.FK_Bus_fleet_Schemas" FromRole="Bus_fleet" ToRole="Schemas" />
+    <NavigationProperty Name="Routes" Relationship="Self.FK_Routes_Bus_fleet" FromRole="Bus_fleet" ToRole="Routes" />
+  </EntityType>
+  <EntityType Name="Bus_types">
+    <Key>
+      <PropertyRef Name="BUS_TYPE_ID" />
+    </Key>
+    <Property Name="BUS_TYPE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BUS_TYPENAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BUS_HASCARD" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Bus_fleet" Relationship="Self.FK_Bus_fleet_Bus_types" FromRole="Bus_types" ToRole="Bus_fleet" />
+  </EntityType>
+  <EntityType Name="Carriers">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ORG_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ORG_ADDRESS" Type="String" MaxLength="75" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ORG_PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ORG_EMAIL" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Bus_fleet" Relationship="Self.FK_Bus_fleet_Carriers" FromRole="Carriers" ToRole="Bus_fleet" />
+  </EntityType>
+  <EntityType Name="Profiles">
+    <Key>
+      <PropertyRef Name="PROFILE_ID" />
+    </Key>
+    <Property Name="PROFILE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FNAME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MNAME" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="BIRTH_DATE" Type="DateTime" Precision="3" />
+    <Property Name="EMAIL" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="HASH_PASSWORD" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SALT" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROFILE_STATE" Type="Boolean" Nullable="false" />
+    <Property Name="ROLE_ID_FK" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK_Profiles_Roles" FromRole="Profiles" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="Rate_plans">
+    <Key>
+      <PropertyRef Name="PLAN_ID" />
+    </Key>
+    <Property Name="PLAN_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RATE_COSTS" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="PLAN_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="ROLE_ID" />
+    </Key>
+    <Property Name="ROLE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ROLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Profiles" Relationship="Self.FK_Profiles_Roles" FromRole="Roles" ToRole="Profiles" />
+  </EntityType>
+  <EntityType Name="Routes">
+    <Key>
+      <PropertyRef Name="ROUTE_ID" />
+    </Key>
+    <Property Name="ROUTE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ROUTE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TRAVEL_COSTS" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="BUS_ID_FK" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Bus_fleet" Relationship="Self.FK_Routes_Bus_fleet" FromRole="Routes" ToRole="Bus_fleet" />
+    <NavigationProperty Name="TimetableList" Relationship="AutovauxModel.FK_TimetableList_Routes" FromRole="Routes" ToRole="TimetableList" />
+    <NavigationProperty Name="TimetableTemp" Relationship="AutovauxModel.FK_TimetableTemp_Routes" FromRole="Routes" ToRole="TimetableTemp" />
+  </EntityType>
+  <EntityType Name="Schemas">
+    <Key>
+      <PropertyRef Name="SCHEME_ID" />
+    </Key>
+    <Property Name="SCHEME_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SEAT_COUNT" Type="Int32" Nullable="false" />
+    <Property Name="SPEED" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="COUNTRY_ABBR" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Bus_fleet" Relationship="Self.FK_Bus_fleet_Schemas" FromRole="Schemas" ToRole="Bus_fleet" />
+  </EntityType>
+  <EntityType Name="TimetableList">
+    <Key>
+      <PropertyRef Name="TIMETABLE_ID" />
+    </Key>
+    <Property Name="TIMETABLE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DEPARTURE_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ARRIVAL_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ROUTE_ID_FK" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Routes" Relationship="AutovauxModel.FK_TimetableList_Routes" FromRole="TimetableList" ToRole="Routes" />
+    <NavigationProperty Name="Timetables" Relationship="AutovauxModel.FK_TimetableList_Timetables" FromRole="TimetableList" ToRole="Timetables" />
+  </EntityType>
+  <EntityType Name="Timetables">
+    <Key>
+      <PropertyRef Name="DATE" />
+    </Key>
+    <Property Name="DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="TimetableList" Relationship="AutovauxModel.FK_TimetableList_Timetables" FromRole="Timetables" ToRole="TimetableList" />
+  </EntityType>
+  <Association Name="FK_Bus_fleet_Bus_types">
+    <End Role="Bus_types" Type="Self.Bus_types" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Bus_fleet" Type="Self.Bus_fleet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bus_types">
+        <PropertyRef Name="BUS_TYPE_ID" />
+      </Principal>
+      <Dependent Role="Bus_fleet">
+        <PropertyRef Name="BUS_TYPE_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bus_fleet_Carriers">
+    <End Role="Carriers" Type="Self.Carriers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Bus_fleet" Type="Self.Bus_fleet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carriers">
+        <PropertyRef Name="ORG_ID" />
+      </Principal>
+      <Dependent Role="Bus_fleet">
+        <PropertyRef Name="ORG_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bus_fleet_Schemas">
+    <End Role="Schemas" Type="Self.Schemas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Bus_fleet" Type="Self.Bus_fleet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schemas">
+        <PropertyRef Name="SCHEME_ID" />
+      </Principal>
+      <Dependent Role="Bus_fleet">
+        <PropertyRef Name="SCHEME_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Routes_Bus_fleet">
+    <End Role="Bus_fleet" Type="Self.Bus_fleet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Routes" Type="Self.Routes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bus_fleet">
+        <PropertyRef Name="BUS_ID" />
+      </Principal>
+      <Dependent Role="Routes">
+        <PropertyRef Name="BUS_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Profiles_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Profiles" Type="Self.Profiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="Profiles">
+        <PropertyRef Name="ROLE_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AutovauxContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bron" EntityType="Self.Bron" />
+    <EntitySet Name="Bus_fleet" EntityType="Self.Bus_fleet" />
+    <EntitySet Name="Bus_types" EntityType="Self.Bus_types" />
+    <EntitySet Name="Carriers" EntityType="Self.Carriers" />
+    <EntitySet Name="Profiles" EntityType="Self.Profiles" />
+    <EntitySet Name="Rate_plans" EntityType="Self.Rate_plans" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="Routes" EntityType="Self.Routes" />
+    <EntitySet Name="Schemas" EntityType="Self.Schemas" />
+    <EntitySet Name="TimetableList" EntityType="Self.TimetableList" />
+    <EntitySet Name="Timetables" EntityType="Self.Timetables" />
+    <AssociationSet Name="FK_Bus_fleet_Bus_types" Association="Self.FK_Bus_fleet_Bus_types">
+      <End Role="Bus_types" EntitySet="Bus_types" />
+      <End Role="Bus_fleet" EntitySet="Bus_fleet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bus_fleet_Carriers" Association="Self.FK_Bus_fleet_Carriers">
+      <End Role="Carriers" EntitySet="Carriers" />
+      <End Role="Bus_fleet" EntitySet="Bus_fleet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bus_fleet_Schemas" Association="Self.FK_Bus_fleet_Schemas">
+      <End Role="Schemas" EntitySet="Schemas" />
+      <End Role="Bus_fleet" EntitySet="Bus_fleet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Routes_Bus_fleet" Association="Self.FK_Routes_Bus_fleet">
+      <End Role="Bus_fleet" EntitySet="Bus_fleet" />
+      <End Role="Routes" EntitySet="Routes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Profiles_Roles" Association="Self.FK_Profiles_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Profiles" EntitySet="Profiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TimetableList_Routes" Association="AutovauxModel.FK_TimetableList_Routes">
+      <End Role="Routes" EntitySet="Routes" />
+      <End Role="TimetableList" EntitySet="TimetableList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TimetableList_Timetables" Association="AutovauxModel.FK_TimetableList_Timetables">
+      <End Role="Timetables" EntitySet="Timetables" />
+      <End Role="TimetableList" EntitySet="TimetableList" />
+    </AssociationSet>
+    <EntitySet Name="TimetableTemp" EntityType="AutovauxModel.TimetableTemp" />
+    <AssociationSet Name="FK_TimetableTemp_Routes" Association="AutovauxModel.FK_TimetableTemp_Routes">
+      <End Role="Routes" EntitySet="Routes" />
+      <End Role="TimetableTemp" EntitySet="TimetableTemp" />
+    </AssociationSet>
+    <EntitySet Name="GenialView" EntityType="AutovauxModel.GenialView" />
+  </EntityContainer>
+  <Association Name="FK_TimetableList_Routes">
+    <End Type="AutovauxModel.Routes" Role="Routes" Multiplicity="1" />
+    <End Type="AutovauxModel.TimetableList" Role="TimetableList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Routes">
+        <PropertyRef Name="ROUTE_ID" />
+      </Principal>
+      <Dependent Role="TimetableList">
+        <PropertyRef Name="ROUTE_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TimetableList_Timetables">
+    <End Type="AutovauxModel.Timetables" Role="Timetables" Multiplicity="1" />
+    <End Type="AutovauxModel.TimetableList" Role="TimetableList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Timetables">
+        <PropertyRef Name="DATE" />
+      </Principal>
+      <Dependent Role="TimetableList">
+        <PropertyRef Name="DATE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TimetableTemp">
+    <Key>
+      <PropertyRef Name="TEMP_ID" />
+    </Key>
+    <Property Name="TEMP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DEPARTURE_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ARRIVAL_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ROUTE_ID_FK" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Routes" Relationship="AutovauxModel.FK_TimetableTemp_Routes" FromRole="TimetableTemp" ToRole="Routes" />
+  </EntityType>
+  <Association Name="FK_TimetableTemp_Routes">
+    <End Type="AutovauxModel.Routes" Role="Routes" Multiplicity="1" />
+    <End Type="AutovauxModel.TimetableTemp" Role="TimetableTemp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Routes">
+        <PropertyRef Name="ROUTE_ID" />
+      </Principal>
+      <Dependent Role="TimetableTemp">
+        <PropertyRef Name="ROUTE_ID_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="GenialView">
+    <Key>
+      <PropertyRef Name="DEPARTURE_TIME" />
+      <PropertyRef Name="ARRIVAL_TIME" />
+      <PropertyRef Name="ROUTE" />
+      <PropertyRef Name="BUS_ID" />
+      <PropertyRef Name="TEMP_ID" />
+    </Key>
+    <Property Name="DEPARTURE_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ARRIVAL_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ROUTE" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="BUS_ID" Type="Int32" Nullable="false" />
+    <Property Name="TEMP_ID" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

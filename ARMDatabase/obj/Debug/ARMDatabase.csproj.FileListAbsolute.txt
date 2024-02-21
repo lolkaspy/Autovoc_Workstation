@@ -1,0 +1,42 @@
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\ARMDatabase.dll.config
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\ARMDatabase.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\ARMDatabase.pdb
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\obj\Debug\ARMDatabase.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\obj\Debug\ARMDatabase.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\obj\Debug\ARMDatabase.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\obj\Debug\ARMDatabase.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\ARMDatabase\obj\Debug\ARMDatabase.pdb
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\ARMDatabase.dll.config
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\ARMDatabase.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\ARMDatabase.pdb
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\obj\Debug\ARMDatabase.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\obj\Debug\ARMDatabase.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\obj\Debug\ARMDatabase.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\obj\Debug\ARMDatabase.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\ARMDatabase\obj\Debug\ARMDatabase.pdb
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\ARMDatabase.dll.config
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\ARMDatabase.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\ARMDatabase.pdb
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\EntityFramework.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\EntityFramework.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\EntityFramework.SqlServer.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\ru\EntityFramework.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\obj\Debug\ARMDatabase.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\obj\Debug\ARMDatabase.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\obj\Debug\ARMDatabase.csproj.CopyComplete
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\obj\Debug\ARMDatabase.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\ARMDatabase\obj\Debug\ARMDatabase.pdb

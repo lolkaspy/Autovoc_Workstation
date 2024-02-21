@@ -1,0 +1,371 @@
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.exe.config
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.exe
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.pdb
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.SuggestedBindingRedirects.cache
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\MainWindow.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\App.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_MarkupCompile.cache
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_MarkupCompile.lref
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\MainWindow.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.g.resources
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.Properties.Resources.resources
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.GenerateResource.cache
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.exe
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.pdb
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Icons\icon_rasp.png
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_Content.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\MessageBoxUI.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\MessageBoxUI.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Splashscreen.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Splashscreen.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\TicketPage.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\TicketPage.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Auth.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Auth.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Buffers.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Memory.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Text.Json.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.ValueTuple.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Buffers.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Memory.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Text.Json.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.ValueTuple.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\BronPage.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\BronPage.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\BackUpUI.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.pdb
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\BackUpUI.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\RaspPage.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\RaspPage.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\ARMDatabase.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\ARMDatabase.pdb
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\ARMDatabase.dll.config
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\TimePicker.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\TimePicker.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\MasterPage.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\MasterPage.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\SprPage.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\SprPage.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Reg.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Reg.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.ResolveComReference.cache
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\EasyDox.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\EasyDox.Morpher.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Morpher.API.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Morpher.AppConfigFactory.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Morpher.Dynamic.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Morpher.Generic.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Morpher.WebService.V2.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\EasyDox.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\EasyDox.Morpher.xml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Theme\Styles.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\App.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\CarriersTable.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\CarriersTable.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\ProfilesTable.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\ProfilesTable.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\BusTypesTable.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\BusFleetTable.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\RoutesTable.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\SchemasTable.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\RolesTable.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\BusTypesTable.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\BusFleetTable.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\RoutesTable.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\SchemasTable.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\RolesTable.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\Welcoming.g.cs
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\obj\Debug\Tables\Welcoming.baml
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\AutoVauxLauncher\AutoVauxLauncher\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Icons\icon_rasp.png
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.exe.config
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.exe
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.pdb
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\ARMDatabase.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\EasyDox.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\EasyDox.Morpher.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Morpher.API.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Morpher.AppConfigFactory.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Morpher.Dynamic.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Morpher.Generic.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Morpher.WebService.V2.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Buffers.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Memory.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Text.Json.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.ValueTuple.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\ARMDatabase.pdb
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\ARMDatabase.dll.config
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\EasyDox.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\EasyDox.Morpher.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.pdb
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Buffers.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Memory.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Text.Json.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.ValueTuple.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.SuggestedBindingRedirects.cache
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.ResolveComReference.cache
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Reg.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Auth.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\MessageBoxUI.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Theme\Styles.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\TimetablePage.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Reg.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\BackUpUI.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\MasterPage.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\MainWindow.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Auth.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\MessageBoxUI.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Reports.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\SprPage.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Splashscreen.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\BronPage.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\BusTypesTable.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\BusFleetTable.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\RoutesTable.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\SchemasTable.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\RolesTable.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\ProfilesTable.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\CarriersTable.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\Welcoming.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\TicketPage.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\TimePicker.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\App.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_Content.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_MarkupCompile.cache
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_MarkupCompile.lref
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\App.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\TimetablePage.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\BackUpUI.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\MasterPage.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\MainWindow.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Reports.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\SprPage.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Splashscreen.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\BronPage.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\BusTypesTable.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\BusFleetTable.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\RoutesTable.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\SchemasTable.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\RolesTable.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\ProfilesTable.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\CarriersTable.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\Tables\Welcoming.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\TicketPage.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\TimePicker.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.g.resources
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.Properties.Resources.resources
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.GenerateResource.cache
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.CopyComplete
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.exe
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.pdb
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\EditProfile.baml
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\obj\Debug\EditProfile.g.cs
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\itextsharp.dll
+C:\Users\Дмитрий\source\repos\ТестКурсовой\AutoVauxLauncher\bin\Debug\itextsharp.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Icons\icon_rasp.png
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.exe.config
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.exe
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\AutoVauxLauncher.pdb
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\ARMDatabase.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\BouncyCastle.Crypto.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\EasyDox.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\EasyDox.Morpher.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\EntityFramework.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\itextsharp.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Morpher.API.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Morpher.AppConfigFactory.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Morpher.Dynamic.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Morpher.Generic.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Morpher.WebService.V2.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Buffers.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Memory.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Numerics.Vectors.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Text.Encodings.Web.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Text.Json.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.ValueTuple.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Windows.Interactivity.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\ARMDatabase.pdb
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\ARMDatabase.dll.config
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\EasyDox.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\EasyDox.Morpher.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\EntityFramework.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\EntityFramework.SqlServer.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\itextsharp.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.pdb
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\Ookii.Dialogs.Wpf.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Buffers.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Memory.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Numerics.Vectors.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Text.Encodings.Web.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Text.Json.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.ValueTuple.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\System.Windows.Interactivity.xml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.SuggestedBindingRedirects.cache
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.ResolveComReference.cache
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\EditProfile.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Reg.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Auth.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\MessageBoxUI.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Theme\Styles.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\EditProfile.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\TimetablePage.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Reg.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\BackUpUI.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\MasterPage.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\MainWindow.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Auth.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\MessageBoxUI.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Reports.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\SprPage.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Splashscreen.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\BronPage.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\BusTypesTable.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\BusFleetTable.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\RoutesTable.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\SchemasTable.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\RolesTable.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\ProfilesTable.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\CarriersTable.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\Welcoming.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\TicketPage.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\TimePicker.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\App.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_Content.g.cs
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_MarkupCompile.cache
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher_MarkupCompile.lref
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\App.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\TimetablePage.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\BackUpUI.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\MasterPage.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\MainWindow.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Reports.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\SprPage.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Splashscreen.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\BronPage.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\BusTypesTable.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\BusFleetTable.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\RoutesTable.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\SchemasTable.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\RolesTable.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\ProfilesTable.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\CarriersTable.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\Tables\Welcoming.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\TicketPage.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\TimePicker.baml
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.g.resources
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.Properties.Resources.resources
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.GenerateResource.cache
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.csproj.CopyComplete
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.exe
+D:\Visual Studio Projects\ТестКурсовой — копия (2)\AutoVauxLauncher\obj\Debug\AutoVauxLauncher.pdb
